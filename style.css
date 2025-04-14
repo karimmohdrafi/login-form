@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    /* background-color: paleturquoise; */
+    padding: 50px;
+    width: 320px;
+    height: 400px;
+    gap: 30px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-shadow: 0 0 40px purple;
+
+
+}
+label{
+    font-size: 17px;
+    font-weight: bold;
+}
+input {
+    margin-top: -20px;
+    padding: 12px;
+    background-color: whitesmoke;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    color: black;
+}
+::placeholder{
+    color: grey;
+}
+.shape {
+    width: 200px;
+    height: 200px;
+     border-radius: 50%;
+}
+.background>:nth-child(1){
+    background: linear-gradient(red, pink);
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+.background>:nth-child(2){
+    background: linear-gradient(to right grey, yellow);
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+}
+.main {
+     position: relative;
+}
+.social .google{
+    background-color: red;
+    padding: 10px 30px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social .facebook{
+    background-color: blue;
+    padding: 10px 30px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social {
+    display: flex;
+    gap: 70px;
+}
+.social a {
+    color: white;
+
+    
+
+}
+.login {
+    padding: 15px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login:hover {
+    background-color: green;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.facebook:active {
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+.google:active {
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+.login:active {
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
